@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f3e5f5; /* Light purple background */
 }
 
 h1, h2 {
-    color: #4a90e2;
+    color: #6a1b9a; /* Deep purple for primary headers */
     text-align: center;
 }
 
@@ -20,32 +20,39 @@ h1, h2 {
 button, select {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4a90e2;
+    background-color: #8e24aa; /* Purple for primary button */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, select:hover {
+    background-color: #9c27b0; /* Lighter purple on hover */
 }
 
 canvas {
     width: 100%;
     height: 150px;
-    background-color: white;
+    background-color: #e1bee7; /* Light purple for canvas background */
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border-radius: 8px;
+    border: 1px solid #b39ddb; /* Light purple border for aesthetics */
 }
 
 #eqSuggestions, #musicianAdvice, #historyDisplay {
-    background-color: white;
+    background-color: #ffffff; /* White background to make text easier to read */
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 #message {
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -65,8 +72,17 @@ canvas {
     align-items: center;
 }
 
+.eq-slider label {
+    color: #6a1b9a; /* Deep purple for labels */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 .analysis-results {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    background-color: #ede7f6; /* Very light purple for analysis box background */
+    padding: 10px;
+    border-radius: 8px;
 }
